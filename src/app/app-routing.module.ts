@@ -1,10 +1,22 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { UsersListComponent } from './users-list/users-list.component';
+import { LoginComponent } from './login/login.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ExtendedUsersComponent } from './extended-users/extended-users.component';
+import { RegisterComponent } from './register/register.component';
 
-
-const routes: Routes = [];
+const routes: Routes = [
+  {path: "users", component: UsersListComponent},
+  {path: "extended-users", component: ExtendedUsersComponent},
+  {path: "login", component: LoginComponent},
+  {path: "register", component: RegisterComponent},
+  {path: "", redirectTo: "/users", pathMatch: "full"},
+  {path: "**", component: PageNotFoundComponent}
+];
 
 @NgModule({
+  declarations: [],
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
