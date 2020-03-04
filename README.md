@@ -29,6 +29,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## What you need to have installed
 - nodeJS: https://nodejs.org/en/
 - angular: npm i -g @angular/cli
-- yxcvbn: 
+- zxcvbn: 
     npm install zxcvbn
     npm i @types/zxcvbn --save-dev
